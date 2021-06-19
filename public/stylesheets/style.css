@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+section > h2 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+  margin: 0rem 0.5rem;
+  padding: 0.5rem;
+}
+
+#about-me ul {
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+}
+#about-me ul li {
+  margin: 1rem;
+}
+
+#projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#projects ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#projects ul .card {
+  width: 10rem;
+  height: 20rem;
+  margin: 0.4rem;
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=style.css.map */

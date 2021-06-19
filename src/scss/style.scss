@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  // display: flex;
+  flex-wrap: wrap;
+}
+section>h2{
+  text-align: center;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+  position: sticky;
+  top: 0;
+  ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    li{
+      display: flex;
+      align-items: center;
+      background-color: bisque;
+      margin: 0rem .5rem;
+      padding:  .5rem;
+    }
+  }
+} 
+#about-me{
+  ul{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    li{
+      margin: 1rem;
+    }
+  }
+}
+#projects{
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  flex-direction: column;
+  ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // background-color: blueviolet;
+    // flex-direction: row;
+    .card{
+      width: 10rem;
+      height: 20rem;
+      margin: .4rem;
+      background-color: aqua;
+    }
+  }
+}
