@@ -8,11 +8,14 @@
   <title>Portfolio - Atharva Upadhye</title>
   <link rel="icon" type="image/png" href="public/images/favicon.png" />
   <link rel="stylesheet" href="public/stylesheets/style.css">
+  <!-- <script src="/src/js.js" defer></script> -->
 </head>
 
 <body>
   <nav>
-    <h1>Atharva Upadhye</h1>
+    <a href="#">
+      <h1>Atharva Upadhye</h1>
+    </a>
     <h3>
       <ul>
         <li><a href="#projects">Projects</a></li>
@@ -35,7 +38,7 @@
       <!-- I shared the skills and values gained on Medium. -->
       <p>When I'm not coding, you can find me
       </p>
-      <ul>
+      <ul class="tablets">
         <li>Running</li>
         <li>Swimming</li>
         <li>Cricket</li>
@@ -46,31 +49,96 @@
     <section id="projects">
       <h2>These are some of the projects I have made while learning different technologies</h2>
       <ul>
-        <a href="public/pages/404.html" class="card">p1</div>
-        </a>
-        <a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a><a href="public/pages/404.html" class="card">p1</div>
-        </a>
+        <li>
+          <a href="public/pages/404.html" class="card">
+            <div class="card-title">Authentication Project</div>
+            <div class="card-description">
+              To learn how authentication works.
+            </div>
+            <div class="badges">
+              <div class="badge">ReactJS</div>
+              <div class="badge">ExpressJS</div>
+              <div class="badge">MongoDB</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="public/pages/404.html" class="card">
+            <div class="card-title">Launcher App</div>
+            <div class="card-description">
+              A quick app launcher with feeds similar to Google Now and Xiaomi App Vault.
+            </div>
+            <div class="badges">
+              <div class="badge">Flutter</div>
+              <div class="badge">ExpressJS</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="public/pages/404.html" class="card">
+            <div class="card-title">Script to copy missing files</div>
+            <div class="card-description">
+              Copies missing files of source directory to destination directory by comparing filenames. Also has custom
+              settings to exclude files
+            </div>
+            <div class="badges">
+              <div class="badge">NodeJS</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="certifications">
+      <h2>Certificates</h2>
+      <ul>
+        <li>
+          <a class="button" target="_blank"
+            href="https://www.freecodecamp.org/certification/atharva-u-01/responsive-web-design">
+            Responsive Web Design
+          </a>
+        </li>
+        <li>
+          <a class="button" target="_blank"
+            href="https://www.freecodecamp.org/certification/atharva-u-01/javascript-algorithms-and-data-structures">
+            JavaScript Algorithms and Data Structures
+          </a>
+        </li>
+        <li>
+          <a class="button" target="_blank"
+            href="https://drive.google.com/file/d/1Bz4UFhJgNbtE0QmxzxDLMjNl3Y1qsphe/view?usp=sharing">
+            BEC Preliminary
+          </a>
+        </li>
       </ul>
     </section>
     <section id="contact-me">
       <h2>Contact Me</h2>
-      <div>*** profile links go here ***</div>
+      <!-- <div>*** profile links go here ***</div> -->
+      <ul>
+        <li>
+          <a href="https://www.github.com/atharva-u-01">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/github.svg"
+              alt="github icon" class="icon">
+            <h4>atharva-u-01</h4>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/atharva.u.01"><img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/ig-instagram.svg"
+              alt="instagram icon" class="icon">
+            <h4>atharva.u.01</h4>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/atharva.u.01"><img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/facebook-app.svg"
+              alt="facebook icon" class="icon">
+            <h4>atharva.u.01</h4>
+          </a>
+        </li>
+      </ul>
     </section>
+
   </main>
 </body>
 
