@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Atharva Upadhye</title>
   <link rel="icon" type="image/png" href="public/images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="public/stylesheets/style.css">
   <!-- <script src="/src/js.js" defer></script> -->
 </head>
@@ -16,79 +17,86 @@
     <a href="#">
       <h1>Atharva Upadhye</h1>
     </a>
-    <h3>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-      </ul>
-    </h3>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact-me">Contact Me</a></li>
+    </ul>
   </nav>
-  <main>
-    <section id="about-me">
-      <h2>About Me</h2>
-      <p>My mission as a developer is to contribute to applications that empower and motivate lives. I believe that
-        through code we can make the world a better place by building products that empower communities. </p>
-      <p>On my free time, I am building web applications through the FreeCodeCamp curriculum, an open source coding
-        community. On top of FreeCodeCamp, I attend meetups and seminars, listen to engineering podcasts, read tech
-        blogs,
-        and take other online courses in order to help me develop a growth mindset and become a better developer.
-      </p>
-      <p>I recently started contributing to open source through DWOC</p>
-      <!-- I shared the skills and values gained on Medium. -->
-      <p>When I'm not coding, you can find me
-      </p>
-      <ul class="tablets">
-        <li>Running</li>
-        <li>Swimming</li>
-        <li>Cricket</li>
-        <li>Traveling </li>
-      </ul>
 
+  <main>
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <div class="container-centered">
+        <p>My mission as a developer is to contribute to applications that empower and motivate lives. I believe that
+          through code we can make the world a better place by building products that empower communities. </p>
+        <p>On my free time, I am building web applications through the FreeCodeCamp curriculum, an open source coding
+          community. On top of FreeCodeCamp, I attend meetups and seminars, listen to engineering podcasts, read tech
+          blogs,
+          and take other online courses in order to help me develop a growth mindset and become a better developer.
+        </p>
+        <p>I recently started contributing to open source through DWOC</p>
+        <p>When I'm not coding, you can find me doing
+        </p>
+        <ul class="tablets">
+          <li>Running</li>
+          <li>Swimming</li>
+          <li>Cricket</li>
+          <li>Traveling </li>
+        </ul>
+      </div>
     </section>
-    <section id="projects">
+
+    <section class="section section-offwhite projects" id="projects">
       <h2>These are some of the projects I have made while learning different technologies</h2>
-      <ul>
-        <li>
-          <a href="public/pages/404.html" class="card">
-            <div class="card-title">Authentication Project</div>
-            <div class="card-description">
+      <div class="container-centered">
+        <ul>
+          <li class="card">
+            <h3 class="card-title">Authentication Project</h3>
+            <p>
               To learn how authentication works.
-            </div>
-            <div class="badges">
-              <div class="badge">ReactJS</div>
-              <div class="badge">ExpressJS</div>
-              <div class="badge">MongoDB</div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="public/pages/404.html" class="card">
-            <div class="card-title">Launcher App</div>
-            <div class="card-description">
+            </p>
+            <p>Tech Stack: <span class="badge">ReactJS, ExpressJS, MongoDB</span></p>
+            <button class="button button-primary"><a href="https://emoticons-interpreter-app.netlify.com" class="link"
+                rel="noreferrer noopener" target="_blank">View
+                Project</a></button>
+            <button class="button button-secondary"><a href="https://github.com/shraddha-1402/Emoji-Interpreter"
+                class="link" rel="noreferrer noopener" target="_blank">View
+                Source</a></button>
+          </li>
+          <li class="card">
+            <h3 class="card-title">Launcher App</h3>
+            <p>
               A quick app launcher with feeds similar to Google Now and Xiaomi App Vault.
-            </div>
-            <div class="badges">
-              <div class="badge">Flutter</div>
-              <div class="badge">ExpressJS</div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="public/pages/404.html" class="card">
-            <div class="card-title">Script to copy missing files</div>
-            <div class="card-description">
-              Copies missing files of source directory to destination directory by comparing filenames. Also has custom
+            </p>
+            <p>Tech Stack: <span class="badge">Flutter, ExressJS</span></p>
+            <button class="button button-primary"><a href="https://emoticons-interpreter-app.netlify.com" class="link"
+                rel="noreferrer noopener" target="_blank">View
+                Project</a></button>
+            <button class="button button-secondary"><a href="https://github.com/shraddha-1402/Emoji-Interpreter"
+                class="link" rel="noreferrer noopener" target="_blank">View
+                Source</a></button>
+          </li>
+          <li class="card">
+            <h3 class="card-title">Script to copy missing files</h3>
+            <p>
+              Copies missing files of source directory to destination directory by comparing filenames. Also has
+              custom
               settings to exclude files
-            </div>
-            <div class="badges">
-              <div class="badge">NodeJS</div>
-            </div>
-          </a>
-        </li>
-      </ul>
+            </p>
+            <p>Tech Stack: <span class="badge">NodeJS</span></p>
+            <button class="button button-primary"><a href="https://emoticons-interpreter-app.netlify.com" class="link"
+                rel="noreferrer noopener" target="_blank">View
+                Project</a></button>
+            <button class="button button-secondary"><a href="https://github.com/shraddha-1402/Emoji-Interpreter"
+                class="link" rel="noreferrer noopener" target="_blank">View
+                Source</a></button>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section id="certifications">
+
+    <section class="section certifications" id="certifications">
       <h2>Certificates</h2>
       <ul>
         <li>
@@ -97,49 +105,49 @@
             Responsive Web Design
           </a>
         </li>
-        <li>
-          <a class="button" target="_blank"
-            href="https://www.freecodecamp.org/certification/atharva-u-01/javascript-algorithms-and-data-structures">
-            JavaScript Algorithms and Data Structures
-          </a>
-        </li>
+
         <li>
           <a class="button" target="_blank"
             href="https://drive.google.com/file/d/1Bz4UFhJgNbtE0QmxzxDLMjNl3Y1qsphe/view?usp=sharing">
             BEC Preliminary
           </a>
         </li>
-      </ul>
-    </section>
-    <section id="contact-me">
-      <h2>Contact Me</h2>
-      <!-- <div>*** profile links go here ***</div> -->
-      <ul>
         <li>
-          <a href="https://www.github.com/atharva-u-01">
-            <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/github.svg"
-              alt="github icon" class="icon">
-            <h4>atharva-u-01</h4>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/atharva.u.01"><img
-              src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/ig-instagram.svg"
-              alt="instagram icon" class="icon">
-            <h4>atharva.u.01</h4>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/atharva.u.01"><img
-              src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/facebook-app.svg"
-              alt="facebook icon" class="icon">
-            <h4>atharva.u.01</h4>
+          <a class="button" target="_blank"
+            href="https://www.freecodecamp.org/certification/atharva-u-01/javascript-algorithms-and-data-structures">
+            JavaScript Algorithms and DS
           </a>
         </li>
       </ul>
     </section>
 
+    <footer class="footer" id="contact-me">
+      <div class=" container-flex-column">
+        <h4>Let's Connect</h4>
+        <div>
+          <a href="https://github.com/shraddha-1402" class="link" rel="noreferrer noopener" target="_blank">
+            <span class="span-icons fa fa-github" aria-hidden="true"></span>
+          </a>
+          <a href="#" class="link" rel="noreferrer noopener" target="_blank">
+            <span class="span-icons fa fa-twitter" aria-hidden="true"></span>
+          </a>
+          <a href="#" class="link" rel="noreferrer noopener" target="_blank">
+            <span class="span-icons fa fa-linkedin" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+      <div class=" container-flex-column">
+        <h4>Useful Links</h4>
+        <div class="footer-link-super">
+          <a href="#about" class="link footer-link">About</a>
+          <a href="#projects" class="link footer-link">Projects</a>
+          <a href="#certifications" class="link footer-link">Certifications</a>
+        </div>
+      </div>
+    </footer>
+
   </main>
+
 </body>
 
 </html>
