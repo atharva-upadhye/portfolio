@@ -1,4 +1,4 @@
-:root{
+:root {
   --primaty-color: rgb(59, 0, 168);
   --offwhite: rgb(230, 230, 230);
 }
@@ -13,7 +13,7 @@ html {
   flex-wrap: wrap;
 }
 
-h1{
+h1 {
   font-size: 32px;
 }
 
@@ -59,19 +59,19 @@ nav ul {
   list-style: none;
 }
 
-nav ul li{
+nav ul li {
   margin: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
-nav ul li:hover{
+nav ul li:hover {
   text-decoration: underline;
 }
 
-nav ul li:last-child{
+nav ul li:last-child {
   margin-right: 0;
 }
 
-.container-centered{
+.container-centered {
   max-width: 48rem;
   margin: auto;
 }
@@ -96,23 +96,23 @@ nav ul li:last-child{
   margin-top: 1rem;
 }
 
-.card{
+.card {
   padding: 1rem;
 }
 
-.card-title{
+.card-title {
   margin-bottom: 1rem;
 }
 
-.card p{
+.card p {
   margin: 0.5rem 0;
 }
 
-.badge{
+.badge {
   color: var(--primaty-color);
 }
 
-.link{
+.link {
   text-decoration: none;
   color: var(--button-color, white);
 }
@@ -120,33 +120,34 @@ nav ul li:last-child{
 .button {
   border: 0;
   font-weight: bold;
-  border-radius: calc(1rem*0.5);
+  border-radius: calc(1rem * 0.5);
   cursor: pointer;
 }
 
-.button-primary, .button-secondary{
-  font-size: calc(1rem*0.8);
-  padding: calc(1rem*0.5);
-  margin: calc(1rem*0.25);
+.button-primary,
+.button-secondary {
+  font-size: calc(1rem * 0.8);
+  padding: calc(1rem * 0.5);
+  margin: calc(1rem * 0.25);
   border: 1px solid var(--primaty-color);
 }
 
-.button-primary{
+.button-primary {
   margin-left: 0;
 }
 
-.button-primary{
+.button-primary {
   background: var(--primaty-color);
   --button-color: white;
   box-shadow: rgba(14, 38, 37, 0.12) 0px 1px 2px 0px,
-              rgba(14, 38, 37, 0.32) 0px 2px 4px 1px;
+    rgba(14, 38, 37, 0.32) 0px 2px 4px 1px;
 }
 
-.button-secondary{
+.button-secondary {
   background: white;
   --button-color: var(--primaty-color);
   box-shadow: rgba(170, 170, 170, 0.12) 0px 1px 2px 0px,
-                rgba(95, 95, 95, 0.32) 0px 2px 4px 1px;
+    rgba(95, 95, 95, 0.32) 0px 2px 4px 1px;
 }
 
 .certifications ul {
@@ -167,10 +168,10 @@ nav ul li:last-child{
   border-radius: 0.5rem;
   border: 2px solid var(--primaty-color);
   box-shadow: rgba(14, 38, 37, 0.12) 0px 1px 2px 0px,
-  rgba(14, 38, 37, 0.32) 0px 2px 4px 1px;
+    rgba(14, 38, 37, 0.32) 0px 2px 4px 1px;
 }
 
-.footer{
+.footer {
   padding: 1rem;
   color: white;
   background-color: var(--primaty-color);
@@ -179,34 +180,33 @@ nav ul li:last-child{
   flex-direction: row;
 }
 
-.footer h4{
+.footer h4 {
   margin: 1rem 0;
 }
 
-.footer-link{
+.footer-link {
   margin-right: 1rem;
   font-size: medium;
 }
 
-.span-icons{
+.span-icons {
   margin-right: 2rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
 
-.span-icons:hover{
+.span-icons:hover {
   font-weight: bold;
 }
 
-.footer-link-super{
+.footer-link-super {
   line-height: 0;
-  padding:0.5rem;
+  padding: 0.5rem;
   padding-left: 0;
 }
 
-@media(max-width: 500px){
-
-  h1{
+@media (max-width: 500px) {
+  h1 {
     font-size: 24px;
   }
 
@@ -214,31 +214,31 @@ nav ul li:last-child{
     margin: 0.5rem;
   }
 
-  nav h1{
+  nav h1 {
     padding-top: 1rem;
     padding-left: 1rem;
   }
 
-  nav ul{
+  nav ul {
     padding-left: 1rem;
   }
 
-  nav ul li{
+  nav ul li {
     margin: 0.5rem 1rem 0.5rem 0rem;
   }
 
-  .container-flex-column{
+  .container-flex-column {
     display: flex;
     flex-direction: column;
     align-items: start;
   }
-  
-  .footer{
+
+  .footer {
     flex-direction: column;
   }
-  
-  .footer h4{
+
+  .footer h4 {
     margin: 0;
-    margin-bottom: 0.5rem ;
+    margin-bottom: 0.5rem;
   }
 }
