@@ -20,7 +20,25 @@ export default function Layout({ children }: { children: ReactNode }) {
             name="description"
             content="Portfolio website of Atharva Upadhye"
           />
-          <link rel="shortcut icon" href="/favicon.svg" type="image/svg" />
+          {/* https://www.youtube.com/watch?v=HqfsuSmiVOY */}
+          <link
+            rel="shortcut icon"
+            href="favicon.svg"
+            type="image/svg"
+            media="(prefers-color-scheme: light)"
+          />
+          <link
+            rel="shortcut icon"
+            href="favicon-dark.svg"
+            type="image/svg"
+            media="(prefers-color-scheme: dark)"
+          />
+          <link
+            rel="shortcut icon"
+            href="favicon-dark.svg"
+            type="image/svg"
+            media="(prefers-color-scheme: no-preference)"
+          />
           <title>Portfolio - Atharva Upadhye</title>
         </head>
         <body>
