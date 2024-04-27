@@ -1,4 +1,6 @@
 import React from "react";
+import { Section } from "../section";
+import { Chip } from "../chip";
 export enum SkillCategory {
   pLang = "Programming Language",
   tool = "Tool",
@@ -30,25 +32,20 @@ function Skills(props: SkillsProps) {
   const g = transformSkills(props.skills);
 
   return (
-    <div className="my-4">
-      <a className=" text-2xl" href="#skills">
-        Skills
-      </a>
-      <div className="flex flex-col gap-2 ml-2">
+    <Section name={"Skills"}>
+      <div className="flex flex-col gap-2">
         {g.map((v) => (
           <div className=" flex gap-1 items-center">
             <div>{v.category}:</div>
             <div className=" flex gap-1">
               {Array.from(v.skills).map((v) => (
-                <div className=" bg-blue-200 dark:bg-blue-800 dark:text-white rounded-xl px-4 py-1">
-                  {v}
-                </div>
+                <Chip key={v}>{v}</Chip>
               ))}
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </Section>
   );
 }
 

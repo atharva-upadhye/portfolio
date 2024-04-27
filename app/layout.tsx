@@ -8,7 +8,13 @@ export default function Layout({ children }: { children: ReactNode }) {
     <>
       {/* TODO: find out why we cannot use this in Next.js and what is the alternative. */}
       {/* <!DOCTYPE html> */}
-      <html lang="en" suppressHydrationWarning>
+      <html
+        lang="en"
+        suppressHydrationWarning
+        // style={{
+        //   scrollPaddingTop: "84px",
+        // }}
+      >
         <head>
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -41,11 +47,11 @@ export default function Layout({ children }: { children: ReactNode }) {
           />
           <title>Portfolio - Atharva Upadhye</title>
         </head>
-        <body>
+        <body className=" bg-slate-300 dark:bg-slate-800">
           <Providers>
             <Navbar />
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </Providers>
         </body>
       </html>

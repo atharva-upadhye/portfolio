@@ -1,13 +1,13 @@
 import React from "react";
+import { Section } from "./section";
 
 interface SocialHandlesProps {
   handles: { title: string; link: string; hoverText?: string }[];
 }
 function SocialHandles(props: SocialHandlesProps) {
   return (
-    <div className=" my-4">
-      Social handles
-      <div className="flex flex-row gap-2 ml-2">
+    <Section name="Social handles">
+      <div className="flex flex-row gap-2">
         {props.handles.map((h, i) => (
           <div className="group flex relative">
             <a
@@ -18,13 +18,13 @@ function SocialHandles(props: SocialHandlesProps) {
             >
               {h.title}
             </a>
-            <span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute translate-y-full opacity-0 m-1 mx-auto text-nowrap p-1 whitespace-nowrap">
+            <span className="absolute text-nowrap whitespace-nowrap transition-all invisible opacity-0 group-hover:visible group-hover:opacity-100 group-hover:translate-y-full">
               {h.hoverText}
             </span>
           </div>
         ))}
       </div>
-    </div>
+    </Section>
   );
 }
 

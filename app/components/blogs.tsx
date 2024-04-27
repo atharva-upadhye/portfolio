@@ -1,7 +1,8 @@
 import React from "react";
+import { Section } from "./section";
 
 function Blogs() {
-  return <div>Blogs</div>;
+  return <Section name="Blogs"></Section>;
 }
 
 export default Blogs;

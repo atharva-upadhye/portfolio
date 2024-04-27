@@ -1,18 +1,35 @@
 import React from "react";
-import About from "./components/sections/about";
 import Certifications from "./components/sections/certifications";
-import Skills, { SkillCategory } from "./components/skills";
-import Projects from "./components/projects";
+import Skills, { SkillCategory } from "./components/sections/skills";
+import Projects from "./components/sections/projects";
 import Blogs from "./components/blogs";
 import SocialHandles from "./components/social-handles";
-import Timeline from "./components/timeline";
+import Timeline from "./components/sections/timeline";
+import { Welcome } from "./components/welcome";
 
 export default function page() {
   return (
-    <main>
-      Hello 👋🏽 <br />
-      I am Atharva Upadhye, <br />
-      a Software Developer from India
+    <main className="flex flex-col gap-4 max-w-2xl m-auto p-2 py-4">
+      <Welcome />
+      <SocialHandles
+        handles={[
+          {
+            title: "GitHub",
+            link: "https://github.com/AtharvaUpadhye",
+            hoverText: "AtharvaUpadhye",
+          },
+          {
+            title: "Twitter",
+            link: "https://twitter.com/_ath_x",
+            hoverText: "_ath_x",
+          },
+          {
+            title: "LinkedIn",
+            link: "https://linkedin.com/in/atharva-upadhye",
+            hoverText: "atharva-upadhye",
+          },
+        ]}
+      />
       <Skills
         skills={[
           { name: "Angular", categories: [] },
@@ -41,43 +58,56 @@ export default function page() {
           { name: "Sass", categories: [] },
         ]}
       />
+
       <Projects
         projects={[
           {
             title: "Android app launcher",
-            description: "created using flutter",
+            description:
+              "A quick app launcher with feeds similar to Google Now and Xiaomi App Vault.",
             demoLink: "",
             sourceLink: "",
+            techStack: "Flutter, Dart, Android",
           },
           {
             title: "Auth from scratch",
             description: "used express, react, JWT",
-            demoLink: "",
+            demoLink: "https://react-auth-123.herokuapp.com/",
             sourceLink:
               "https://github.com/AtharvaUpadhye/auth-in-express-react",
+            techStack: "ReactJS, ExpressJS, MongoDB",
+          },
+          {
+            title: "Script to copy missing files",
+            description:
+              "Copies missing files of source directory to destination directory by comparing filenames. Also has custom settings to exclude files",
+            techStack: "NodeJS",
+            demoLink: "https://github.com/atharva-u-01/copy_missing_files",
+            sourceLink: "https://github.com/atharva-u-01/copy_missing_files",
           },
         ]}
       />
+      <Certifications
+        certificates={
+          [
+            // {
+            //   name: "Responsive Web Design",
+            //   url: "https://www.freecodecamp.org/certification/atharva-u-01/responsive-web-design",
+            // },
+            // {
+            //   name: "BEC Preliminary",
+            //   url: "https://drive.google.com/file/d/1Bz4UFhJgNbtE0QmxzxDLMjNl3Y1qsphe/view?usp=sharing",
+            // },
+            // {
+            //   name: "JavaScript Algorithms and DS",
+            //   url: "https://www.freecodecamp.org/certification/atharva-u-01/javascript-algorithms-and-data-structures",
+            // },
+          ]
+        }
+      />
+
       <Blogs />
-      <SocialHandles
-        handles={[
-          {
-            title: "github",
-            link: "https://github.com/AtharvaUpadhye",
-            hoverText: "AtharvaUpadhye",
-          },
-          {
-            title: "twitter",
-            link: "https://twitter.com/_ath_x",
-            hoverText: "_ath_x",
-          },
-          {
-            title: "linkedIn",
-            link: "https://linkedin.com/in/atharva-upadhye",
-            hoverText: "atharva-upadhye",
-          },
-        ]}
-      />
+
       <Timeline
         events={[
           {
@@ -106,9 +136,6 @@ export default function page() {
           },
         ]}
       />
-      {/* <About /> */}
-      {/* <Projects /> */}
-      {/* <Certifications /> */}
     </main>
   );
 }

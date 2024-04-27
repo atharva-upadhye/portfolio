@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import IconCompoterDesktop from "./icons/icon-computer-desktop";
-import IconSun from "./icons/icon-sun";
-import IconMoon from "./icons/icon-moon";
+import IconCompoterDesktop from "../icons/icon-computer-desktop";
+import IconSun from "../icons/icon-sun";
+import IconMoon from "../icons/icon-moon";
 
 export function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
@@ -21,7 +21,7 @@ export function ThemeSwitcher() {
     <>
       <div
         className={
-          "m-2 rounded-md p-2 flex flex-row bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(0,0,0,0.3)] gap-2 w-fit"
+          "rounded-md p-2 flex flex-row bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(0,0,0,0.3)] gap-2 w-fit "
         }
       >
         <button

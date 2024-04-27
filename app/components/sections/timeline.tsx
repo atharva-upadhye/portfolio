@@ -1,6 +1,8 @@
 import React from "react";
 import dayjs from "dayjs";
-import { groupBy } from "../lib/utils";
+import { groupBy } from "../../lib/utils";
+import { Section } from "../section";
+
 type Event = {
   from: Date;
   to: Date;
@@ -19,17 +21,17 @@ function Timeline(props: TimelineProps) {
   );
 
   return (
-    <div className="m-3">
-      <div className="text-center">Timeline</div>
-      <br />
-      {/* {JSON.stringify(groupByYear)} */}
-      <div className="flex flex-col gap-8">
+    <Section name="Timeline">
+      <div className="flex flex-col gap-4">
         {groupByYear.map((v) => (
-          <div>
+          <div key={v.groupId}>
             <div>{v.groupId}</div>
-            <div className="flex flex-col gap-2 ml-3">
+            <div className="flex flex-col gap-2 ml-3 border-l-2 border-blue-500 pl-4">
               {v.elements.map((event, i) => (
-                <div key={i}>
+                <div
+                  key={i}
+                  className=" bg-slate-200 dark:bg-slate-900 rounded-sm p-2"
+                >
                   <div>{`${dayjs(event.from).format("D MMM 'YY")} - ${dayjs(
                     event.to
                   ).format("D MMM 'YY")}`}</div>
@@ -41,7 +43,7 @@ function Timeline(props: TimelineProps) {
           </div>
         ))}
       </div>
-    </div>
+    </Section>
   );
 }
 

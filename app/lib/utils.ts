@@ -31,3 +31,6 @@ export function groupBy<ArrayElement, GroupId>(
     }[]
   );
 }
+export const defaultClassName = {
+  a: "text-blue-500 hover:text-blue-800",
+};
