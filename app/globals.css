@@ -1,11 +1,17 @@
-:root {
-  --primaty-color: rgb(59, 0, 168);
-  --offwhite: rgb(230, 230, 230);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   scroll-behavior: smooth;
 }
+
+/* :root {
+  --primaty-color: rgb(59, 0, 168);
+  --offwhite: rgb(230, 230, 230);
+}
+
+
 
 * {
   margin: 0;
@@ -45,7 +51,6 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: var(--primaty-color);
   color: white;
   font-weight: bold;
 }
@@ -230,7 +235,7 @@ nav ul li:last-child {
   .container-flex-column {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex=start;
   }
 
   .footer {
@@ -241,4 +246,4 @@ nav ul li:last-child {
     margin: 0;
     margin-bottom: 0.5rem;
   }
-}
+} */

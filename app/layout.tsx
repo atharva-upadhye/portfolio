@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <>
       {/* TODO: find out why we cannot use this in Next.js and what is the alternative. */}
       {/* <!DOCTYPE html> */}
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
         <head>
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
