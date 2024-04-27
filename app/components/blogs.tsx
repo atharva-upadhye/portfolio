@@ -1,8 +1,12 @@
 import React from "react";
 import { Section } from "./section";
 
-function Blogs() {
-  return <Section name="Blogs"></Section>;
+function Blogs({ blogs }: { blogs: { title: string; link: string }[] }) {
+  return (
+    <Section name="Blogs">
+      {blogs.length ? <></> : <>No blogs available</>}
+    </Section>
+  );
 }
 
 export default Blogs;

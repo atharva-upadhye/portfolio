@@ -38,7 +38,7 @@ function Projects(props: ProjectsProps) {
               </a>
             </div>
             {p.techStack.length ? (
-              <div className="flex flex-row gap-1">
+              <div className="flex flex-row gap-1 flex-wrap">
                 {p.techStack.split(",").map((skill) => (
                   <Chip key={skill}>{skill}</Chip>
                 ))}

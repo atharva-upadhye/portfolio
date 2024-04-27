@@ -16,7 +16,7 @@ export function Welcome() {
       </div>
       <div className="flex flex-col gap-1 py-2">
         <div>You can jump to the following sections:</div>
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 flex-wrap">
           {[
             "Social handles",
             "Skills",
@@ -25,7 +25,11 @@ export function Welcome() {
             "Blogs",
             "Timeline",
           ].map((v) => (
-            <a key={v} href={`#${v}`} className={defaultClassName.a}>
+            <a
+              key={v}
+              href={`#${v}`}
+              className={defaultClassName.a + "text-nowrap whitespace-nowrap"}
+            >
               #{v}
             </a>
           ))}

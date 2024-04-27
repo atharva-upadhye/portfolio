@@ -106,7 +106,7 @@ export default function page() {
         }
       />
 
-      <Blogs />
+      <Blogs blogs={[]} />
 
       <Timeline
         events={[

@@ -33,11 +33,11 @@ function Skills(props: SkillsProps) {
 
   return (
     <Section name={"Skills"}>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-4">
         {g.map((v) => (
-          <div className=" flex gap-1 items-center">
+          <div className=" flex flex-row flex-wrap gap-1 items-center">
             <div>{v.category}:</div>
-            <div className=" flex gap-1">
+            <div className=" flex flex-row gap-1 flex-wrap">
               {Array.from(v.skills).map((v) => (
                 <Chip key={v}>{v}</Chip>
               ))}
