@@ -5,6 +5,10 @@ import {
 	SocialHandle,
 	TimelineEvent,
 } from "./types";
+
+export const links = {
+	resume: "https://utfs.io/f/PzJN3l8X6SyoLJjRUSBM1PedIXQjlZuRzhWf7it3GqpcFoNg",
+};
 const certificates: Certificate[] = [
 	{
 		name: "Responsive Web Design",
