@@ -1,12 +1,15 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IconCompoterDesktop, IconMoon, IconSun } from "../icons";
 import { twColor, defaultClassName, cn } from "@/utils/tailwind";
 // import { useTheme } from "./use-theme";
 import { useTheme } from "next-themes";
 export function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
-  console.log(theme);
+	const [mounted, setMounted] = useState(false);
+	useEffect(() => setMounted(true), []);
+
+	if (!mounted) return null;
 
   return (
     <div
