@@ -8,7 +8,7 @@ export default function Home() {
 			// ref={ref}
 		>
 			<div className="text-2xl">{`Hello 👋🏽, myself`}</div>
-			<div className="text-5xl">Atharva Upadhye</div>
+			<h1 className="text-5xl">Atharva Upadhye</h1>
 			<div className="text-2xl">{whatIDo}</div>
 			<div>{whoAmI}</div>
 			<div className="flex flex-row gap-1">

@@ -6,6 +6,7 @@ import ScrollToTop from "@/components/scroll-to-top";
 import { LayoutProps } from "@/../.next/types/app/layout";
 import { cn } from "@/utils/tailwind";
 import { ThemeProvider } from "next-themes";
+import { Axe } from "@/components/axe";
 // import { scriptFn as initScript } from "@/utils/script";
 
 const geistSans = localFont({
@@ -41,6 +42,7 @@ export default function RootLayout({
 				<a id="skip-to-content" href="#content">
 					Skip to Content
 				</a>
+				<Axe />
 				{/* <script
           suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: `(${initScript.toString()})()` }}
