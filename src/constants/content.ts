@@ -7,7 +7,8 @@ import {
 } from "./types";
 
 export const links = {
-	resume: "https://utfs.io/f/PzJN3l8X6SyoLJjRUSBM1PedIXQjlZuRzhWf7it3GqpcFoNg",
+	resume:
+		"https://2kkflj1nst.ufs.sh/f/PzJN3l8X6SyoPH6eTR8X6SyoTxtmLPAWZ3pfeFb8a4d2qVuJ",
 };
 const certificates: Certificate[] = [
 	{
